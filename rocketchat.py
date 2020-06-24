@@ -27,7 +27,7 @@ import json
 VERSION = "0.0.1"
 
 CONFIG = {
-    "avatar": "https://raw.githubusercontent.com/jorzekowsky/rocketchat-nagios/master/images/centreon_logo.png", #noqa
+    "avatar": "https://raw.githubusercontent.com/jorzekowsky/rocketchat-nagios/master/images/centreon_logos/Centreon_Logo_V_CMJN.jpg", #noqa
     "alias": "Centreon",
     "colors": {
         "OK": "#36a64f",
@@ -107,7 +107,6 @@ def request(url, data, args):
     req = urllib2.Request(url, data)
     response = urllib2.urlopen(req)
     return response.read()
-
 
 if __name__ == "__main__":
     args = parse()
