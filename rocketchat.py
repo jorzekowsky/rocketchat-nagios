@@ -27,7 +27,7 @@ import json
 VERSION = "0.0.1"
 
 CONFIG = {
-    "avatar": "https://raw.githubusercontent.com/jorzekowsky/rocketchat-nagios/master/images/centreon_logos/Centreon_Logo_V_CMJN.jpg", #noqa
+    "avatar": "https://raw.githubusercontent.com/jorzekowsky/rocketchat-nagios/master/images/centreon_logos/centreon_logo_v_cmjn.jpg", #noqa
     "alias": "Centreon",
     "colors": {
         "OK": "#36a64f",
