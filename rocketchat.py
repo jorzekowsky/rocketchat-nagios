@@ -28,7 +28,7 @@ VERSION = "0.0.1"
 
 CONFIG = {
     "avatar": "https://raw.githubusercontent.com/jorzekowsky/rocketchat-nagios/master/images/centreon_logo.png", #noqa
-    "alias": "Nagios",
+    "alias": "Centreon",
     "colors": {
         "OK": "#36a64f",
         "CRITICAL": "#d00000",
