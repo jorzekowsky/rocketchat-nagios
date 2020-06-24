@@ -27,7 +27,7 @@ import json
 VERSION = "0.0.1"
 
 CONFIG = {
-    "avatar": "https://raw.githubusercontent.com/andrefreitas/rocketchat-nagios/master/images/nagios_128.png", #noqa
+    "avatar": "https://raw.githubusercontent.com/jorzekowsky/rocketchat-nagios/master/images/centreon_logo.png", #noqa
     "alias": "Nagios",
     "colors": {
         "OK": "#36a64f",
@@ -113,9 +113,9 @@ if __name__ == "__main__":
     args = parse()
     if args.nagiosurl:
         if args.servicestate:
-            TEMPLATE_SERVICE += "\nSee {nagiosurl}/nagios/cgi-bin/extinfo.cgi?type=2&host={hostalias}&service={servicedesc}"
+            TEMPLATE_SERVICE += "\nSee {nagiosurl}/centreon/main.php?p=20201&o=svcd&host_name={hostalias}&service_description={servicedesc}"
         elif args.hoststate:
-            TEMPLATE_HOST += "\nSee {nagiosurl}/nagios/cgi-bin/extinfo.cgi?type=1&host={hostalias}"
+            TEMPLATE_HOST += "\nSee {nagiosurl}/centreon/main.php?p=20202&o=hd&host_name={hostalias}"
 
     data = create_data(args, CONFIG)
     response = request(args.url, data, args)
